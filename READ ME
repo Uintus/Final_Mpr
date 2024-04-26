@@ -1,0 +1,18 @@
+- Change name of screen follow this app.js
+#Example to use navigation: 
+        export default function FirstScreen({navigation}) {
+        return (
+            <View style={styles.container}>
+            <Text>first</Text>
+            <TouchableOpacity
+                activeOpacity={0.8}
+                onPress={() => {navigation.navigate('HomeScreen');}}
+            >
+                <Text style={styles.text}>click me!</Text>
+            </TouchableOpacity>
+            <StatusBar style="auto" />
+            </View>
+        );
+        }
+
+
